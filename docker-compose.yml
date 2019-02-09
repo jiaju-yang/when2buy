@@ -1,0 +1,12 @@
+version: '3.0'
+
+services:
+  postgres:
+    image: postgres:11.1
+    restart: on-failure
+    env_file: $PWD/dockerfiles/pg.env
+    volumes:
+      - ./data/pgdata:/data
+      - ./data/backup:/backup
+    ports:
+      - "5432:5432"
