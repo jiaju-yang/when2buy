@@ -18,6 +18,14 @@ class CtripSpider(scrapy.Spider):
         flights = [
             ('ctu', 'hgh'),
             ('sha', 'bjs'),
+            ('bjs', 'syx'),
+            ('wuh', 'ckg'),
+            ('csx', 'tao'),
+            ('hgh', 'tyn'),
+            ('hfe', 'dlc'),
+            ('csx', 'wux'),
+            ('szx', 'sia'),
+            ('bjs', 'ljg'),
         ]
         now = utils.now()
         for flight in flights:
